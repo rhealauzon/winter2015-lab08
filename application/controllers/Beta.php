@@ -11,6 +11,9 @@ class Beta extends Application {
 
     function __construct() {
         parent::__construct();
+        
+        //restrict to users only
+        $this->restrict(array(ROLE_USER,ROLE_ADMIN));
     }
 
     //-------------------------------------------------------------
